@@ -1,2 +1,1 @@
-# Untitled
-
+# GIT BOOK을 이용하여 개발노트를 사용한다.

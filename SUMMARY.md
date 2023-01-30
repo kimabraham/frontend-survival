@@ -1,5 +1,10 @@
 # Table of contents
 
-* [GIT BOOK 을 이용한 개발노트](README.md)
-* [GIT Hub 와 연동하기](git-hub.md)
-* [GIT Book 가이드](git-book-1.md)
+## GitBook
+
+- [GIT Hub 와 연동하기](/github/git-hub.md)
+- [GIT Book 가이드](/github/git-book-1.md)
+
+## 효과적인 학습법
+
+- [미라클모닝](miracle-morning.md)
