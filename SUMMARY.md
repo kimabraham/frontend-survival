@@ -1,13 +1,9 @@
 # Table of contents
 
-* [README](README.md)
-
-## GitBook
-
-* [GIT Hub 와 연동하기](github/git-hub.md)
-* [GIT Book 가이드](github/git-book-1.md)
-* [PR 날리기](gitbook/pr.md)
-
-## 효과적인 학습법
-
-* [미라클모닝](miracle-morning.md)
+* [😺 INTRO](README.md)
+* [🙀 1주차 강의](week\_1/README.md)
+  * [🔴 개발환경](week\_1/dev\_setting.md)
+  * [🔵 Typescript](week\_1/typescript.md)
+  * [🟣 React](week\_1/react.md)
+  * [🟤 Testing Library](week\_1/testing-library.md)
+  * [🟡 Parcel\&EsLint](week\_1/parcel-and-eslint.md)
