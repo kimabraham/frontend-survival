@@ -6,6 +6,7 @@
 
 * [GIT Hub 와 연동하기](github/git-hub.md)
 * [GIT Book 가이드](github/git-book-1.md)
+* [PR 날리기](gitbook/pr.md)
 
 ## 효과적인 학습법
 
