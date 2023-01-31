@@ -25,16 +25,54 @@ _어느 환경에서든지 자기가 쓰는 개발 환경을 세팅할 수 있�
 
 ## TypeScript + React + Jest + Parcel 개발환경세팅
 
+1. 프로젝트 폴더 만들고 npm 초기화 해준다.
+2. 당연히 <mark style="color:red;">`.gitignore`</mark> 만들어 주고 vscode extention을 이용한다.
+3. 타입스크립트 설치 dev로
 
+```
+npm i -D typescript
 
-jest 관련 모듈 설치
+npx tsc --init
+```
 
-<pre><code>
-<strong>npm i -D jest @types/jest @swc/core @swc/jest \
+4. npx 라는건 dev로 혹은 글로벌로 설치된 typescript 에서 tsc를 가져와서 typescript를 초기 설정하는 것을 의미한다. 이거 하면 <mark style="color:red;">`tsconfig.json`</mark> 이라는 파일이 생성되는데, 여기서 jsx 속성 변경한다.
+5. ESLint 설정
+
+```
+npm i -D eslint
+
+npx eslint --init
+```
+
+6. <mark style="color:red;">`.eslintrc.js`</mark> 수정한다. <mark style="color:red;">`jest:true`</mark>
+7. 여기도 <mark style="color:red;">`.eslintignore`</mark> 파일을 생성한다.
+8. 리액트설치
+
+```
+npm i react react-dom
+
+npm i -D @types/react @types/react-dom
+```
+
+9. jest 관련 모듈 설치
+
+<pre><code><strong>npm i -D jest @types/jest @swc/core @swc/jest \
 </strong>    jest-environment-jsdom \
     @testing-library/react @testing-library/jest-dom
     
 </code></pre>
+
+10. &#x20;<mark style="color:red;">`jest.config.js`</mark> 파일을 작성해 설치한 swc를 사용한다. confing 파일 내용 [참고](https://github.com/ahastudio/CodingLife/blob/main/20220726/react/jest.config.js)
+11. &#x20;기본 코드 작성하여 테스트 및  내용
+
+작성 파일들
+
+* <mark style="color:red;">`index.html`</mark>
+* <mark style="color:red;">`src/main.tsx`</mark>
+* <mark style="color:red;background-color:yellow;">`src/App.tsx`</mark>
+* <mark style="color:red;background-color:yellow;">`src/App.test.tsx`</mark>
+* <mark style="color:red;background-color:yellow;">`src/components/Greeting.test.tsx`</mark>
+* <mark style="color:red;background-color:yellow;">`src/components/Greeting.tsx`</mark>
 
 
 
