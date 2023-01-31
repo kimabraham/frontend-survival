@@ -27,7 +27,7 @@ _<mark style="color:green;">****</mark>_[_<mark style="color:green;">**목차**<
 * [fnm](https://github.com/Schniz/fnm)(Fast Node Manager)
 * [nvm](https://github.com/nvm-sh/nvm)(Node Version Manager)
 
-_<mark style="color:green;">****</mark>_[_<mark style="color:green;">**목차**</mark>_](dev\_setting.md#undefined)  :arrow\_up:
+_<mark style="color:green;">****</mark>_[_<mark style="color:green;">**목차**</mark>_](dev\_setting.md)  :arrow\_up:
 
 
 
@@ -90,7 +90,7 @@ npm i -D jest @types/jest @swc/core @swc/jest \
 * <mark style="color:red;background-color:yellow;">`src/components/Greeting.test.tsx`</mark>
 * <mark style="color:red;background-color:yellow;">`src/components/Greeting.tsx`</mark>
 
-_<mark style="color:green;">****</mark>_[_<mark style="color:green;">**목차**</mark>_ ](dev\_setting.md#undefined) _<mark style="color:green;">****</mark>_ :arrow\_up:_<mark style="color:green;">****</mark>_
+_<mark style="color:green;">****</mark>_[_<mark style="color:green;">**목차**</mark>_](dev\_setting.md)  _<mark style="color:green;">****</mark>_  :arrow\_up:_<mark style="color:green;">****</mark>_
 
 
 
