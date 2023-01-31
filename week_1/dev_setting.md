@@ -1,10 +1,14 @@
 # 🔴 개발환경
 
+
+
 ## 서론
 
 {% hint style="info" %}
 _어느 환경에서든지 자기가 쓰는 개발 환경을 세팅할 수 있어야 한다.자주 세팅하지 않기 때문에 항상 할때마다 생각보다 많은 시간과 오류를 경험하는 구간이라고 생각하기 때문에 이 부분을 명확하고 오류 없이 순서대로 할 수 있어야 하며 개념을 잘 잡아 놓아야 된다고 생각한다. 물론 시작부분에서 모든 과정을 이해할 수는 없겠지만, 어느정도는 알고 있어야 나중에 개발 환경에 대해서 첨삭이 가능할 것이라고 생각한다. 특히 cofing 파일 같은 부분에 있어서 상세히 알아두고 기록할 필요가 있다고 생각한다._
 {% endhint %}
+
+
 
 
 
@@ -21,6 +25,8 @@ _어느 환경에서든지 자기가 쓰는 개발 환경을 세팅할 수 있�
 개발환경세팅은 노드 환경이 지속적으로 업그레이드 됨으로 그때마다 설정이 바뀔수도 있기때문에 어렵다고 본다. 현재 노드 버전은 18.13.0 되도록 LTS 최신 버전을 사용하는 것이 좋다. fnm or nvm 등 노드 관리 프로그램을 사용하여 최신 버전 노드를 사용하여 프로젝트를 시작하는 것이 좋다고 생각된다.&#x20;
 
 &#x20;
+
+
 
 ## JavaScript 개발환경 (Node.js) 세팅
 
@@ -65,6 +71,8 @@ npm install -g npm@latest
 
 
 
+
+
 ## TypeScript + React + Jest + Parcel 개발환경세팅
 
 1. 프로젝트 폴더 만들고 npm 초기화 해준다.
@@ -90,17 +98,8 @@ npx eslint --init
 
 ```
 
-6. <mark style="color:red;">`.eslintrc.js`</mark> 수정한다. <mark style="color:red;">`extends:"plugin:react/jsx-runtime"`</mark> 추가 <mark style="color:red;">`env:jest:true`</mark> 추가
+6. <mark style="color:red;">`.eslintrc.js`</mark> 수정한다. <mark style="color:red;">`jest:true`</mark>
 7. 여기도 <mark style="color:red;">`.eslintignore`</mark> 파일을 생성한다.
-
-```
-
-/dist/
-/node_modules/
-/.parcel-cache/
-
-```
-
 8. 리액트설치
 
 ```
@@ -122,15 +121,7 @@ npm i -D jest @types/jest @swc/core @swc/jest \
 ```
 
 10. &#x20;<mark style="color:red;">`jest.config.js`</mark> 파일을 작성해 설치한 swc를 사용한다. confing 파일 내용 [참고](https://github.com/ahastudio/CodingLife/blob/main/20220726/react/jest.config.js)
-11. &#x20;parcel 설치
-
-```
-
-npm i -D parcel
-
-```
-
-12. 기본 코드 작성하여 테스트 및  내용
+11. &#x20;기본 코드 작성하여 테스트 및  내용
 
 작성 파일들
 
@@ -141,32 +132,7 @@ npm i -D parcel
 * <mark style="color:red;background-color:yellow;">`src/components/Greeting.test.tsx`</mark>
 * <mark style="color:red;background-color:yellow;">`src/components/Greeting.tsx`</mark>
 
-13. &#x20;index.html 파일
+&#x20;_<mark style="color:green;">****</mark>_&#x20;
 
-```
 
-<body>
-    <div id="root"></div>
-    <script type="module" src="./src/main.tsx"></script>
-</body>
 
-```
-
-14. &#x20;<mark style="color:red;">`src/main.tsx`</mark>
-
-```
-
-import ReactDOM from "react-dom/client";
-
-const element = document.getElementById("root");
-
-function App() {
-  return <p>Hello, world!</p>;
-}
-
-if (element) {
-  const root = ReactDOM.createRoot(element);
-  root.render(<App />);
-}
-
-```
