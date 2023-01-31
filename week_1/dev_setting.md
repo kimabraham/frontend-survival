@@ -90,7 +90,7 @@ npm i -D jest @types/jest @swc/core @swc/jest \
 * <mark style="color:red;background-color:yellow;">`src/components/Greeting.test.tsx`</mark>
 * <mark style="color:red;background-color:yellow;">`src/components/Greeting.tsx`</mark>
 
-_<mark style="color:green;">****</mark>_[_<mark style="color:green;">**목차**</mark>_](dev\_setting.md#undefined)  _<mark style="color:green;">****</mark>_  :arrow\_up:_<mark style="color:green;">****</mark>_
+_<mark style="color:green;">****</mark>_[_<mark style="color:green;">**목차**</mark>_ ](dev\_setting.md#undefined) _<mark style="color:green;">****</mark>_ :arrow\_up:_<mark style="color:green;">****</mark>_
 
 
 
