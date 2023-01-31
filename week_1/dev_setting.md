@@ -35,7 +35,41 @@ _어느 환경에서든지 자기가 쓰는 개발 환경을 세팅할 수 있�
 * [fnm](https://github.com/Schniz/fnm)(Fast Node Manager)
 * [nvm](https://github.com/nvm-sh/nvm)(Node Version Manager)
 
-_<mark style="color:green;">****</mark>_
+나는 무슨 문제인지는 모르겠지만, fnm이 잘 작동하지 않느다. 그래서 nvm을 이용하였다.
+
+1. node 지정버전 설치
+
+```
+
+nvm install [version]
+
+```
+
+2. node 지정버전 삭제
+
+```
+
+nvm uninstall [version]
+
+```
+
+3. node default 버전 설정
+
+```
+
+nvm alias default [version]
+
+```
+
+4. npm 최신버전 설치
+
+```
+
+npm install -g npm@latest
+
+```
+
+
 
 
 
