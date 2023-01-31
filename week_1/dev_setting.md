@@ -98,17 +98,8 @@ npx eslint --init
 
 ```
 
-6. <mark style="color:red;">`.eslintrc.js`</mark> 수정한다. <mark style="color:red;">`extends:"plugin:react/jsx-runtime"`</mark> 추가 <mark style="color:red;">`env:jest:true`</mark> 추가
+6. <mark style="color:red;">`.eslintrc.js`</mark> 수정한다. <mark style="color:red;">`jest:true`</mark>
 7. 여기도 <mark style="color:red;">`.eslintignore`</mark> 파일을 생성한다.
-
-```
-
-/dist/
-/node_modules/
-/.parcel-cache/
-
-```
-
 8. 리액트설치
 
 ```
@@ -130,15 +121,7 @@ npm i -D jest @types/jest @swc/core @swc/jest \
 ```
 
 10. &#x20;<mark style="color:red;">`jest.config.js`</mark> 파일을 작성해 설치한 swc를 사용한다. confing 파일 내용 [참고](https://github.com/ahastudio/CodingLife/blob/main/20220726/react/jest.config.js)
-11. &#x20;parcel 설치
-
-```
-
-npm i -D parcel
-
-```
-
-12. 기본 코드 작성하여 테스트 및  내용
+11. &#x20;기본 코드 작성하여 테스트 및  내용
 
 작성 파일들
 
@@ -149,33 +132,7 @@ npm i -D parcel
 * <mark style="color:red;background-color:yellow;">`src/components/Greeting.test.tsx`</mark>
 * <mark style="color:red;background-color:yellow;">`src/components/Greeting.tsx`</mark>
 
-13. &#x20;index.html 파일
+&#x20;_<mark style="color:green;">****</mark>_&#x20;
 
-```
 
-<body>
-    <div id="root"></div>
-    <script type="module" src="./src/main.tsx"></script>
-</body>
-
-```
-
-14. &#x20;<mark style="color:red;">`src/main.tsx`</mark>
-
-```
-
-import ReactDOM from "react-dom/client";
-
-const element = document.getElementById("root");
-
-function App() {
-  return <p>Hello, world!</p>;
-}
-
-if (element) {
-  const root = ReactDOM.createRoot(element);
-  root.render(<App />);
-}
-
-```
 
