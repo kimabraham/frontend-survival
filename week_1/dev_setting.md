@@ -87,7 +87,7 @@ npx tsc --init
 
 ```
 
-4. npx 라는건 dev로 혹은 글로벌로 설치된 typescript 에서 tsc를 가져와서 typescript를 초기 설정하는 것을 의미한다. 이거 하면 <mark style="color:red;">`tsconfig.json`</mark> 이라는 파일이 생성되는데, 여기서 jsx 속성 변경한다.
+4. npx 라는건 dev로 혹은 글로벌로 설치된 typescript 에서 tsc를 가져와서 typescript를 초기 설정하는 것을 의미한다. 이거 하면 <mark style="color:red;">`tsconfig.json`</mark> 이라는 파일이 생성되는데, 여기서 jsx 속성 변경(react-jsx)한다.
 5. ESLint 설정
 
 ```
