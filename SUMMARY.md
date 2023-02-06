@@ -7,3 +7,5 @@
   * [🟣 React](week\_1/react.md)
   * [🟤 Testing Library](week\_1/testing-library.md)
   * [🟡 Parcel\&EsLint](week\_1/parcel-and-eslint.md)
+* [😼 2주차 강의](2/README.md)
+  * [🔴 JSX](2/jsx.md)
