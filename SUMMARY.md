@@ -9,3 +9,6 @@
   * [🟡 Parcel\&EsLint](week\_1/parcel-and-eslint.md)
 * [😼 2주차 강의](2/README.md)
   * [🔴 JSX](2/jsx.md)
+* [😹 3주차 강의](3/README.md)
+  * [🟢 React Component](3/react-component.md)
+  * [🟡 React State](3/react-state.md)
