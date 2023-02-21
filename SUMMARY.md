@@ -14,3 +14,5 @@
   * [🟡 React State](3/react-state.md)
 * [😼 4주차 강의](4/README.md)
   * [🟤 Express](4/express.md)
+  * [🟢 FetchAPI\&CORS](4/fetchapi-and-cors.md)
+  * [🟡 React의 Hooks](4/react-hooks.md)
