@@ -21,3 +21,5 @@
 * [😻 5주차 강의](5/README.md)
   * [🟢 TDD](5/tdd.md)
   * [🟡 React Testing Library](5/react-testing-library.md)
+  * [🟠 MSW](5/msw.md)
+  * [🔵 Playwright](5/playwright.md)
