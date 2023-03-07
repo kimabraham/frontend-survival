@@ -29,18 +29,18 @@ JSX는  XML처럼  작성된 JavaScript를 확장한 문법이다. HTML도 아�
 > React.createElement("Test", null)
 >
 > <Greeting name="kimkr" />
-> React.createElement("Greeting", {name="kimkr"})
+> React.createElement("Greeting", {name:"kimkr"})
 >
 > <Button type="submit">Send</Button>
-> React.createElement("Button", {type="submit"}, "Send")
+> React.createElement("Button", {type:"submit"}, "Send")
 >
 > <div className="test">
 >     <p>Hello, world!</p>
 >     <Button type="submit">Send</Button>
 > </div>
-> React.createElement("div", {className="test"}, 
+> React.createElement("div", {className:"test"}, 
 >     React.createElement("p", null, "Hello, world!"),
->     React.createElement("Button", {type="submit"}, "Send")
+>     React.createElement("Button", {type:"submit"}, "Send")
 > );
 >
 > <>
@@ -49,17 +49,17 @@ JSX는  XML처럼  작성된 JavaScript를 확장한 문법이다. HTML도 아�
 > </>
 > React.createElement(React.Fragment, null, 
 >     React.createElement("p", null, "Hello, world!"),
->     React.createElement("Button", {type="submit"}, "Send")
+>     React.createElement("Button", {type:"submit"}, "Send")
 > );
 >
 > <div>
 >     <p>Count:{count}!</p>
->     <button type="button" onClick={()=>setCount(count+1)}>Increase</buttton>
+>     <button type:"button" onClick:{()=>setCount(count+1)}>Increase</buttton>
 > </div>
 >
 > React.createElement("div", null, 
 >     React.createElement("p", null, "Count:", count, "!"),
->     React.createElement("button", {type="button", onClick={()=>setCount(count+1)},
+>     React.createElement("button", {type:"button", onClick:{()=>setCount(count+1)},
 >                         "Increase")
 > );
 > ```
