@@ -50,3 +50,22 @@
 
 * 원래 상태를 useState로 표현을 했는데, 이것을 밖으로 빼보자!
 * 상태를 바꾸면 랜더링이 되어야 하는데,&#x20;
+* forceUpdate는 state업데이트를 이용해 강제로 재랜더링을 하는것
+
+```tsx
+
+import { useState } from 'react'
+
+const useForceUpdate = () => {
+  const [state, setState] = useState(0)
+  const forceUpdate = () => {
+    setState(state+1)
+  }
+  return forceUpdate;
+}
+
+export default useForceUpdate
+
+```
+
+* forceUpdate를 hook으로 빼준다.
