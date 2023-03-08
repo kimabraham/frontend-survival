@@ -69,3 +69,41 @@ export default useForceUpdate
 ```
 
 * forceUpdate를 hook으로 빼준다.
+* 위와 같은 과정이 external store의 기본적인 개념
+* 즉, 음 상태를 따로 관리 함으로써 다 랜더링 하지 않고 필요한 부분만 랜더링 하고, 또한 그에 따라 복잡성을 최소화 하는것.
+* 위와 같이 하게 되면
+
+```tsx
+import useForceUpdate from '../hooks/useForceUpdate'
+
+
+// Business Logic
+const state = {
+  count:0
+}
+
+const increase = () => {
+  state.count+=1
+}
+
+// UI
+const Counter = () => {
+  const forceUpdate = useForceUpdate()
+  
+  const handleClick = () => {
+    increase()
+    forceUpdate()
+  }
+
+  return (
+    <div>
+      <p>{state.count}</p>
+      <button type='button' onClick={handleClick}>Increase</button>
+    </div>
+  )
+}
+
+export default Counter
+```
+
+* 이렇게 UI 부분과 기능적인 부분은 나눠서 유지 보수에도 편하고 좋다!
