@@ -27,3 +27,4 @@
   * [🟡 External Store](6/external-store.md)
   * [🔴 TSyringe](6/tsyringe.md)
   * [🟢 Redux](6/redux.md)
+  * [🟠 usestore-ts](6/usestore-ts.md)
